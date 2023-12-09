@@ -390,7 +390,7 @@ body {
 }
 
 /* gender */
-input#gender {
+input#cigarClass {
   display: none;
 }
 
@@ -411,8 +411,8 @@ label {
   left: 0;
   height: 41px;
   border-radius: 50%;
-  box-shadow: 0 0 0 8px #f470a7 inset;
-  background-color: #fbd4e6;
+  box-shadow: 0 0 0 8px #a1c6dd inset;
+  background-color: #e2ecf4;
   transition: 0.3s;
 }
 
@@ -421,7 +421,7 @@ label {
   width: 4px;
   height: 18px;
   top: 100%;
-  background-color: #f470a7;
+  background-color: #a1c6dd;
   left: calc(50% - 2px);
 }
 
@@ -432,7 +432,7 @@ label {
   top: 42%;
   content: "";
   height: 4px;
-  background-color: #f470a7;
+  background-color: #a1c6dd;
 }
 
 .knob > i:before {

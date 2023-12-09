@@ -6,9 +6,9 @@ import Constants from 'expo-constants';
 export default function App() {
   
     return Platform.OS ==="web"? (
-      <iframe src = "https://cigarate.netlify.app" height={"100%"} width={'100%'} />
+      <iframe src = "https://cigarate.netlify.app/" height={"100%"} width={'100%'} />
       ) : (<WebView
-        source={{ uri: 'https://cigarate.netlify.app' }}/>
+        source={{ uri: 'https://cigarate.netlify.app/' }}/>
     );
   
 }
