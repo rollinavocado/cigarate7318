@@ -1,16 +1,15 @@
 import * as React from 'react';
 import { WebView } from 'react-native-webview';
-import { Platform, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 
 export default function App() {
-  
-    return Platform.OS ==="web"? (
-      <iframe src = "https://cigarate.netlify.app/" height={"100%"} width={'100%'} />
-      ) : (<WebView
-        source={{ uri: 'https://cigarate.netlify.app/' }}/>
-    );
-  
+  return (
+    <WebView
+      style={styles.container}
+      source={{ uri: 'https://naver.com' }}
+    />
+  );
 }
 
 const styles = StyleSheet.create({
@@ -19,3 +18,21 @@ const styles = StyleSheet.create({
     marginTop: Constants.statusBarHeight,
   },
 });
+// import { StyleSheet, Text, View } from 'react-native';
+
+// export default function App() {
+//   return (
+//     <View style={styles.container}>
+//       <Text>Hello world!</Text>
+//     </View>
+//   );
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
